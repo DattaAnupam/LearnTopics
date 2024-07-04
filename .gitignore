@@ -7,3 +7,10 @@ obj/
 .vs/*
 *.vsidx
 
+*.suo
+*.dtbcache.v2
+*.wsuo
+*.futdcache.v2
+*.bin
+
+DotNetSolutions/DependencyInjection/.vs/*
