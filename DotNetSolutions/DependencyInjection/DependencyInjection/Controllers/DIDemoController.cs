@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Net;
+using System.Net.Mime;
 
 namespace DependencyInjection.Controllers
 {
@@ -7,9 +9,17 @@ namespace DependencyInjection.Controllers
     public class DIDemoController : ControllerBase
     {
         [HttpGet]
+        [Produces(MediaTypeNames.Application.Json)]
         public IActionResult TestDependecyInjection()
         {
-            return Ok();
+
+            // Return response
+            return new ContentResult()
+            {
+                ContentType = MediaTypeNames.Application.Json,
+                StatusCode = (int) HttpStatusCode.OK,
+                Content = "Success"
+            };
         }
     }
 }
