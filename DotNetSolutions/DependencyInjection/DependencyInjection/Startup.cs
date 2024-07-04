@@ -16,7 +16,11 @@
 
         public void Configure(IApplicationBuilder app, IHostEnvironment env)
         {
-
+            app.UseRouting();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            } );
         }
     }
 }
