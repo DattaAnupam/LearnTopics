@@ -1,7 +1,9 @@
-﻿namespace DependencyInjection.DiDemo.Interfaces
+﻿using DependencyInjection.Models;
+
+namespace DependencyInjection.DiDemo.Interfaces
 {
     public interface IDiDemo
     {
-        string TestDependencyInjection();
+        DiSucessModel TestDependencyInjection();
     }
 }
