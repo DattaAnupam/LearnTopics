@@ -1,9 +1,11 @@
 ﻿using DependencyInjection.DiDemo.Interfaces;
 using DependencyInjection.DiDemo;
 using Microsoft.OpenApi.Models;
+using System.Diagnostics.CodeAnalysis;
 
 namespace DependencyInjection.Service
 {
+    [ExcludeFromCodeCoverage]
     public static class ServiceExtensions
     {
         public static IServiceCollection RegisterServices(this IServiceCollection services, IConfiguration configuration)

@@ -1,5 +1,8 @@
-﻿namespace DependencyInjection.Models
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace DependencyInjection.Models
 {
+    [ExcludeFromCodeCoverage]
     public class DiSucessModel
     {
         public string Status { get; set; }

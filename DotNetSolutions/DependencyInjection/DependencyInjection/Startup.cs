@@ -1,7 +1,9 @@
 ﻿using DependencyInjection.Service;
+using System.Diagnostics.CodeAnalysis;
 
 namespace DependencyInjection
 {
+    [ExcludeFromCodeCoverage]
     public class Startup
     {
         public Startup(IConfiguration configuration)
