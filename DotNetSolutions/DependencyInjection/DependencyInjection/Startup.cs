@@ -17,7 +17,6 @@ namespace DependencyInjection
 
             // Register other services
             services.RegisterServices(Configuration);
-            
         }
 
         public void Configure(IApplicationBuilder app, IHostEnvironment env)

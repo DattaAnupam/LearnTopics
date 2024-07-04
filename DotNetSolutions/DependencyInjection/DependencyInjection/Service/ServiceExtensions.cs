@@ -1,4 +1,6 @@
-﻿using Microsoft.OpenApi.Models;
+﻿using DependencyInjection.DiDemo.Interfaces;
+using DependencyInjection.DiDemo;
+using Microsoft.OpenApi.Models;
 
 namespace DependencyInjection.Service
 {
@@ -15,6 +17,9 @@ namespace DependencyInjection.Service
                     Description = configuration.GetValue<string>("SwaggerApiConfig:Description") ?? "Dependecy Injection",
                 });
             });
+
+            // inject main service class
+            services.AddScoped<IDiDemo, DIDemo>();
 
             return services;
         }
