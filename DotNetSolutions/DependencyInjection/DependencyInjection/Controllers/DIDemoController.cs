@@ -6,7 +6,8 @@ namespace DependencyInjection.Controllers
     [ApiController]
     public class DIDemoController : ControllerBase
     {
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult TestDependecyInjection()
         {
             return Ok();
         }
