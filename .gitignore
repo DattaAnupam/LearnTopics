@@ -11,3 +11,6 @@
 */DependencyInjection/*
 *.cache
 
+*/obj/*
+
+/DotNetSolutions/RazorPages/RazorPages/obj/Debug/net8.0/RazorPages.AssemblyInfo.cs
