@@ -12,5 +12,9 @@
 *.cache
 
 */obj/*
-
-/DotNetSolutions/RazorPages/RazorPages/obj/Debug/net8.0/RazorPages.AssemblyInfo.cs
+/DotNetSolutions/RazorPages/RazorPages/obj/Debug/*
+/DotNetSolutions/RazorPages/RazorPages/obj/Release/net8.0/RazorPages.GeneratedMSBuildEditorConfig.editorconfig
+/DotNetSolutions/RazorPages/RazorPages/obj/Release/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+/DotNetSolutions/RazorPages/RazorPages/obj/Release/net8.0/RazorPages.AssemblyInfo.cs
+/DotNetSolutions/RazorPages/RazorPages/obj/Release/net8.0/RazorPages.GlobalUsings.g.cs
+/DotNetSolutions/RazorPages/RazorPages/obj/Release/net8.0/RazorPages.RazorAssemblyInfo.cs
