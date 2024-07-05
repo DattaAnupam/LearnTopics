@@ -1,5 +1,4 @@
 *.sqlite
-*.json
 *.suo
 *.wsuo
 *.testlog
@@ -10,7 +9,9 @@
 *.obj
 */DependencyInjection/*
 *.cache
+.vs*
 
+# ignore local items
 */obj/*
 /DotNetSolutions/RazorPages/RazorPages/obj/Debug/*
 /DotNetSolutions/RazorPages/RazorPages/obj/Release/net8.0/RazorPages.GeneratedMSBuildEditorConfig.editorconfig
@@ -18,3 +19,5 @@
 /DotNetSolutions/RazorPages/RazorPages/obj/Release/net8.0/RazorPages.AssemblyInfo.cs
 /DotNetSolutions/RazorPages/RazorPages/obj/Release/net8.0/RazorPages.GlobalUsings.g.cs
 /DotNetSolutions/RazorPages/RazorPages/obj/Release/net8.0/RazorPages.RazorAssemblyInfo.cs
+/DotNetSolutions/RazorPages/RazorPages/obj/RazorPages.csproj.nuget.dgspec.json
+/DotNetSolutions/RazorPages/RazorPages/obj/project.assets.json
