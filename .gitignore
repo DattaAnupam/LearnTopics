@@ -1,0 +1,13 @@
+*.sqlite
+*.json
+*.suo
+*.wsuo
+*.testlog
+*.manifest
+*.vsidx
+*.v2
+*.bin
+*.obj
+*/DependencyInjection/*
+*.cache
+
