@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace RazorPages.Pages
@@ -10,6 +11,9 @@ namespace RazorPages.Pages
         {
             _logger = logger;
         }
+
+        [BindProperty(SupportsGet = true)]
+        public string CityName { get; set; }
 
         public void OnGet()
         {
