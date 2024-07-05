@@ -1,0 +1,7 @@
+DotNetSolutions/*
+*.sqlite
+*.json
+*.wsuo
+*.testlog
+*.manifest
+*.vsidx
