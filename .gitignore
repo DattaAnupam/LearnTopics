@@ -31,3 +31,5 @@ DotNetSolutions/RazorPages/RazorPages/RazorPages.csproj.user
 DotNetSolutions/RazorPages/RazorPages/RazorPages.csproj.user
 DotNetSolutions/RazorPages/RazorPages/bin/Debug/net8.0/appsettings.Development.json
 DotNetSolutions/RazorPages/RazorPages/bin/Debug/net8.0/appsettings.json
+/DotNetSolutions/RazorPages/RazorPages/obj/RazorPages.csproj.nuget.g.props
+/DotNetSolutions/RazorPages/RazorPages/obj/RazorPages.csproj.nuget.g.targets
