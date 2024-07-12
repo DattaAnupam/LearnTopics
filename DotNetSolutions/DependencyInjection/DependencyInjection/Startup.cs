@@ -20,6 +20,8 @@ namespace DependencyInjection
             services.AddSingleton<IAddSingleTon, AddSingleTon>();
             // Mapping of AddScoped Model
             services.AddScoped<IAddScoped, AddScopedModel>();
+            // Mapping of AddTransient Model
+            services.AddTransient<IAddTransient, AddTransientModel>();
         }
 
         public void Configure(IApplicationBuilder app, IHostEnvironment env)

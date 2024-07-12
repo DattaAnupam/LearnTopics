@@ -15,9 +15,13 @@ namespace DependencyInjection.Controllers
         private readonly IAddScoped _addScoped1;
         private readonly IAddScoped _addScoped2;
 
+        private readonly IAddTransient _addTransient1;
+        private readonly IAddTransient _addTransient2;
+
         public DiController(
             IAddSingleTon addSingleTon1, IAddSingleTon addSingleTon2,
-            IAddScoped addScoped1, IAddScoped addScoped2
+            IAddScoped addScoped1, IAddScoped addScoped2,
+            IAddTransient addTransient1, IAddTransient addTransient2
             )
         {
             _addSingleTon1 = addSingleTon1;
@@ -25,6 +29,9 @@ namespace DependencyInjection.Controllers
 
             _addScoped1 = addScoped1;
             _addScoped2 = addScoped2;
+
+            _addTransient1 = addTransient1;
+            _addTransient2 = addTransient2;
         }
 
         [HttpGet]
@@ -39,6 +46,10 @@ namespace DependencyInjection.Controllers
             var scopedOperationID_1 = _addScoped1.GetAddScopedOperationID();
             var scopedOperatonID_2 = _addScoped2.GetAddScopedOperationID();
 
+            // call to transient class' method
+            var transientOperationID_1 = _addTransient1.GetAddTransiendOperationID();
+            var transientOperationID_2 = _addTransient2.GetAddTransiendOperationID();
+
             // Set Final Response
             var response = new FinalResponse()
             {
@@ -47,6 +58,9 @@ namespace DependencyInjection.Controllers
 
                 AddScopedID_1 = scopedOperationID_1,
                 AddScopedID_2 = scopedOperatonID_2,
+
+                AddTransientID_1 = transientOperationID_1,
+                AddTransientID_2 = transientOperationID_2,
             };
 
             var options = new JsonSerializerOptions()
