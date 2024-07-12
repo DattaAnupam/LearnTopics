@@ -18,6 +18,8 @@ namespace DependencyInjection
 
             // Mapping of SingleTon Model
             services.AddSingleton<IAddSingleTon, AddSingleTon>();
+            // Mapping of AddScoped Model
+            services.AddScoped<IAddScoped, AddScopedModel>();
         }
 
         public void Configure(IApplicationBuilder app, IHostEnvironment env)
