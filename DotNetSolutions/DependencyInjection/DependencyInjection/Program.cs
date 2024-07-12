@@ -1,13 +1,8 @@
-using DependencyInjection;
+namespace DeligateDemo;
 
-var builder = WebApplication.CreateBuilder(args);
-
-// Setup custom start up file
-var startup = new Startup(builder.Configuration);
-startup.ConfigureServices(builder.Services);
-
-var app = builder.Build();
-
-startup.Configure(app, app.Environment);
-
-app.Run();
+internal class Program {
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Hi");
+    }
+}
