@@ -1,4 +1,7 @@
-﻿namespace DependencyInjection
+﻿using DependencyInjection.Models;
+using DependencyInjection.Models.Interfaces;
+
+namespace DependencyInjection
 {
     public class Startup
     {
@@ -11,12 +14,19 @@
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers();
 
+            // Mapping of SingleTon Model
+            services.AddSingleton<IAddSingleTon, AddSingleTon>();
         }
 
         public void Configure(IApplicationBuilder app, IHostEnvironment env)
         {
-
+            app.UseRouting();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
         }
     }
 }
