@@ -43,12 +43,12 @@ namespace DependencyInjection.Controllers
             var singletonOperationID_2 = _addSingleTon1.GetOperationID();
 
             // Call to scoped class' method
-            var scopedOperationID_1 = _addScoped1.GetAddScopedOperationID();
-            var scopedOperatonID_2 = _addScoped2.GetAddScopedOperationID();
+            var scopedOperationID_1 = _addScoped1.GetOperationID();
+            var scopedOperatonID_2 = _addScoped2.GetOperationID();
 
             // call to transient class' method
-            var transientOperationID_1 = _addTransient1.GetAddTransiendOperationID();
-            var transientOperationID_2 = _addTransient2.GetAddTransiendOperationID();
+            var transientOperationID_1 = _addTransient1.GetOperationID();
+            var transientOperationID_2 = _addTransient2.GetOperationID();
 
             // Set Final Response
             var response = new FinalResponse()

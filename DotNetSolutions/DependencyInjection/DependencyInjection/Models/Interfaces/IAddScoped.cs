@@ -2,6 +2,6 @@
 {
     public interface IAddScoped
     {
-        Guid GetAddScopedOperationID();
+        Guid GetOperationID();
     }
 }

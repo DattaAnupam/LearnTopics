@@ -16,12 +16,10 @@ namespace DependencyInjection
         {
             services.AddControllers();
 
-            // Mapping of SingleTon Model
-            services.AddSingleton<IAddSingleTon, AddSingleTon>();
-            // Mapping of AddScoped Model
-            services.AddScoped<IAddScoped, AddScopedModel>();
-            // Mapping of AddTransient Model
-            services.AddTransient<IAddTransient, AddTransientModel>();
+            // Register all three types
+            services.AddSingleton<IAddSingleTon, DiOperations>();
+            services.AddScoped<IAddScoped,  DiOperations>();
+            services.AddTransient<IAddTransient, DiOperations>();
         }
 
         public void Configure(IApplicationBuilder app, IHostEnvironment env)

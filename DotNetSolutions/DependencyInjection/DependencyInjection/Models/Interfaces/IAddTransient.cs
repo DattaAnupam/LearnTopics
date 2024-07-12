@@ -2,6 +2,6 @@
 {
     public interface IAddTransient
     {
-        Guid GetAddTransiendOperationID();
+        Guid GetOperationID();
     }
 }

@@ -2,18 +2,18 @@
 
 namespace DependencyInjection.Models
 {
-    public class AddSingleTon : IAddSingleTon
+    public class DiOperations : IAddSingleTon, IAddScoped, IAddTransient
     {
         Guid ID;
 
-        public AddSingleTon()
+        public DiOperations()
         {
             ID = Guid.NewGuid();
         }
 
         public Guid GetOperationID()
         {
-            return ID; 
+            return ID;
         }
     }
 }
