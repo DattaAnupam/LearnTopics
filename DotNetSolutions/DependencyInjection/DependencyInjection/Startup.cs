@@ -1,5 +1,6 @@
 using DependencyInjection.Models;
 using DependencyInjection.Models.Interfaces;
+using System.Diagnostics.CodeAnalysis;
 
 namespace DependencyInjection
 {
@@ -19,7 +20,7 @@ namespace DependencyInjection
             // Register all three types
             services.AddSingleton<IAddSingleTon, DiOperations>();
             services.AddScoped<IAddScoped,  DiOperations>();
-            services.AddTransient<IAddTransient, DiOperations>()
+            services.AddTransient<IAddTransient, DiOperations>();
         }
 
         public void Configure(IApplicationBuilder app, IHostEnvironment env)

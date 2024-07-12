@@ -14,9 +14,3 @@ obj/
 *.bin
 
 DotNetSolutions/DependencyInjection/.vs/*
-DotNetSolutions/*
-*.sqlite
-*.json
-*.wsuo
-*.testlog
-*.manifest
