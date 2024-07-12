@@ -13,10 +13,7 @@ namespace DependencyInjection
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc(options =>
-            {
-                options.EnableEndpointRouting = false;
-            });
+            services.AddMvc();
 
             services.AddSwaggerGen(options =>
             {
@@ -36,8 +33,6 @@ namespace DependencyInjection
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
                 options.RoutePrefix = string.Empty;
             });
-
-            app.UseMvc();
 
             app.UseRouting();
             app.UseEndpoints(endpoints =>
