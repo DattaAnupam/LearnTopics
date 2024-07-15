@@ -1,23 +1,12 @@
 using DependencyInjection;
-using DependencyInjection.Models;
-
 
 // Get all the students
-// group them by their cities
+// Find the average of Their age
 Students students = new Students();
-IEnumerable<IGrouping<string, Student>> studentGroups = students.GetStudents().GroupBy(s => s.City);
 
-// Print students based on their group
-foreach(IGrouping<string, Student> group in studentGroups)
-{
-    // Display each city
-    Console.WriteLine($"City: {group.Key}");
+var ageAverage = students.GetStudents().Average(s => s.Age);
 
-    // show studets of above group
-    foreach(Student student in group)
-    {
-        Console.WriteLine($"ID: {student.ID}, Name: {student.StudentName}, Age: {student.Age}, City: {student.City}");
-    }
-}
+Console.WriteLine($"Average Age: {ageAverage}");
+
 
 Console.ReadKey();
