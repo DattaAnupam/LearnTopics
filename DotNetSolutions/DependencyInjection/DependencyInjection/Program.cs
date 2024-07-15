@@ -1,17 +1,23 @@
-List<int> integerList = new List<int>()
-{
-    1,2, 3, 4, 5, 6, 7, 8, 9, 10,
-};
+using DependencyInjection;
+using DependencyInjection.Models;
 
-// Method Syntax
-var numbers_method = integerList.Where(n => n > 5).GroupBy(n => n%2 ==0);
 
-foreach(IGrouping<bool, int> group in numbers_method)
+// Get all the students
+// group them by their cities
+Students students = new Students();
+IEnumerable<IGrouping<string, Student>> studentGroups = students.GetStudents().GroupBy(s => s.City);
+
+// Print students based on their group
+foreach(IGrouping<string, Student> group in studentGroups)
 {
-    Console.WriteLine($"{group.Key} : {group.Count()}");
-    foreach(int number in group)
+    // Display each city
+    Console.WriteLine($"City: {group.Key}");
+
+    // show studets of above group
+    foreach(Student student in group)
     {
-        Console.WriteLine(number);
+        Console.WriteLine($"ID: {student.ID}, Name: {student.StudentName}, Age: {student.Age}, City: {student.City}");
     }
 }
 
+Console.ReadKey();
