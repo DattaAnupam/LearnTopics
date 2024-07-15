@@ -14,7 +14,7 @@ Console.WriteLine();
 
 
 // Method Syntax
-var numbers_method = integerList.Where(n => n > 5);
+var numbers_method = integerList.Where(n => n > 5).AsQueryable();
 
 foreach(var number in numbers_method)
 {
