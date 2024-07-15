@@ -5,8 +5,8 @@ List<int> integerList = new List<int>()
 
 // Find all the number which are > 5
 
-// Query Syntax
-var numbers = from n in integerList where n > 5 select n;
+// Method Syntax
+var numbers = integerList.Where(n => n > 5).Select(n => n);
 
 foreach(var number in numbers)
 {
