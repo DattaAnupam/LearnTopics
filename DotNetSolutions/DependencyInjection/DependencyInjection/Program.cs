@@ -4,11 +4,24 @@ List<int> integerList = new List<int>()
 };
 
 // Find all the number which are > 5
+// Query Syntax
+var numbers_query = from n in integerList where n > 5 select n;
+foreach (var number in numbers_query)
+{
+    Console.Write(number);
+}
+Console.WriteLine();
+
 
 // Method Syntax
-var numbers = integerList.Where(n => n > 5).Select(n => n);
+var numbers_method = integerList.Where(n => n > 5);
 
-foreach(var number in numbers)
+foreach(var number in numbers_method)
 {
-    Console.WriteLine(number);
+    Console.Write(number);
 }
+
+// Mixed Syntax = Query Syntax + Fluent/Method Syntax
+// Query: Find the some of numbers > 5 in the above list
+var sum = (from n in integerList where n > 5 select n).Sum();
+Console.WriteLine($"\nSum: {sum}");
