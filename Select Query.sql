@@ -19,3 +19,7 @@ SELECT DISTINCT(CITY) FROM STATION
 -- Query the list of CITY names ending with vowels (i.e., a, e, i, o, or u) from STATION
 SELECT DISTINCT(CITY) FROM STATION
     WHERE  RIGHT(CITY, 1)='a' OR  RIGHT(CITY, 1)='e' OR  RIGHT(CITY, 1)='i' OR  RIGHT(CITY, 1)='o' OR  RIGHT(CITY, 1)='u'
+
+-- Select the list of cities that are not starting with a vowel
+Select Distinct CITY From STATION
+Where CITY NOT LIKE '[AEIOU]%'
