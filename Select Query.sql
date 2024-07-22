@@ -22,4 +22,8 @@ SELECT DISTINCT(CITY) FROM STATION
 
 -- Select the list of cities that are not starting with a vowel
 Select Distinct CITY From STATION
-Where CITY NOT LIKE '[AEIOU]%'
+    Where CITY NOT LIKE '[AEIOU]%'
+
+-- Query the list of CITY names from STATION that do not end with vowels. Your result cannot contain duplicates.
+Select Distinct CITY From STATION
+    Where CITY NOT LIKE '%[AEIOU]'
