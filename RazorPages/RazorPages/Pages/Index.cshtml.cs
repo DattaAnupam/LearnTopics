@@ -12,9 +12,6 @@ namespace RazorPages.Pages
             _logger = logger;
         }
 
-        [BindProperty(SupportsGet = true)]
-        public string CityName { get; set; }
-
         public void OnGet()
         {
 
