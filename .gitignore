@@ -33,3 +33,15 @@ DotNetSolutions/RazorPages/RazorPages/bin/Debug/net8.0/appsettings.Development.j
 DotNetSolutions/RazorPages/RazorPages/bin/Debug/net8.0/appsettings.json
 /DotNetSolutions/RazorPages/RazorPages/obj/RazorPages.csproj.nuget.g.props
 /DotNetSolutions/RazorPages/RazorPages/obj/RazorPages.csproj.nuget.g.targets
+RazorPages/RazorPages/bin/Debug/net8.0/RazorPages.pdb
+*.exe
+/RazorPages/RazorPages/obj/Debug/net8.0
+/RazorPages/RazorPages/bin/Debug
+RazorPages/RazorPages/obj/Debug/net8.0/RazorPages.AssemblyInfo.cs
+RazorPages/RazorPages/obj/Debug/net8.0/RazorPages.GeneratedMSBuildEditorConfig.editorconfig
+RazorPages/RazorPages/RazorPages.csproj.user
+RazorPages/RazorPages/RazorPages.csproj.user
+/RazorPages/RazorPages/obj
+/RazorPages/RazorPages/obj/Debug/net8.0/RazorPages.AssemblyInfo.cs
+/RazorPages/RazorPages/obj/Debug/net8.0/RazorPages.GeneratedMSBuildEditorConfig.editorconfig
+/RazorPages/RazorPages/RazorPages.csproj.user
