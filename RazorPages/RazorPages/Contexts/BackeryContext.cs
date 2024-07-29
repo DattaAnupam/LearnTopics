@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using RazorPages.Configurations;
 using RazorPages.Models;
 
 namespace RazorPages.Contexts
@@ -9,7 +10,7 @@ namespace RazorPages.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration<Product>(new ProductConfiguration());
         }
     }
 }
