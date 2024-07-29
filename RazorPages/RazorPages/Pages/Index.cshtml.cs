@@ -1,20 +1,23 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
+using RazorPages.Contexts;
+using RazorPages.Models;
 
 namespace RazorPages.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
+        private readonly BackeryContext _context;
+        public List<Product> Products { get; set; } = new();
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public IndexModel(BackeryContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
-        public void OnGet()
+        public async Task OnGetAsync()
         {
-
+            Products = await _context.Products.ToListAsync();
         }
     }
 }
