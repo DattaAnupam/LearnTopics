@@ -5,6 +5,8 @@
 }
 @section scripts{
     <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/order.js" asp-append-version="true"></script>
+    
 }
 <div class="progress mb-3" style="height:2.5rem;">
     <div class="progress-bar w-50" style="font-size:1.5rem;" role="progressbar">
@@ -32,6 +34,10 @@
             <label asp-for="ShippingAddress" class="form-label"></label>
             <input asp-for="ShippingAddress" class="form-control" />
             <span asp-validation-for="ShippingAddress"></span>
+        </div>
+        <input type="hidden" asp-for="Price" value="@Model.Product.Price"/>
+        <div class="mb-3">
+            Total cost: <span id="order-total">@Model.Product.Price.ToString("c")</span>
         </div>
         <button type="submit" class="btn btn-sm btn-primary">Place Order</button>
     </form>
