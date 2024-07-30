@@ -3,6 +3,9 @@
 @{
     ViewData["Title"] = "Place your order";
 }
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
 <div class="progress mb-3" style="height:2.5rem;">
     <div class="progress-bar w-50" style="font-size:1.5rem;" role="progressbar">
         Select Item
@@ -33,4 +36,3 @@
         <button type="submit" class="btn btn-sm btn-primary">Place Order</button>
     </form>
 </div>
-
