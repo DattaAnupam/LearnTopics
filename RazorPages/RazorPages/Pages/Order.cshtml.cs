@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using RazorPages.Contexts;
 using RazorPages.Models;
 using System.ComponentModel.DataAnnotations;
-using System.Numerics;
+using System.Text.Json;
 
 namespace RazorPages.Pages
 {
@@ -14,12 +14,8 @@ namespace RazorPages.Pages
         public Product Product { get; set; }
         [BindProperty(SupportsGet = true)]
         public Guid ID { get; set; }
-        [BindProperty, Range(1, int.MaxValue, ErrorMessage = "You must order at lease one item")]
+        [BindProperty, Range(1, int.MaxValue, ErrorMessage = "You must order at least one item")]
         public int Quantity { get; set; } = 1;
-        [BindProperty, Required, EmailAddress(ErrorMessage = "Please Enter a valid Email Address"), Display(Name = "Your Email Address")]
-        public string OrderEmail { get; set; }
-        [BindProperty, Required, Display(Name = "Shipping Address")]
-        public string ShippingAddress { get; set; }
         [BindProperty]
         public decimal Price { get; set; }
         [TempData]
@@ -40,12 +36,38 @@ namespace RazorPages.Pages
         public async Task<IActionResult> OnPostAsync()
         {
             Product = await _context.Products.FindAsync(ID);
+
             if (ModelState.IsValid)
             {
-                Confirmation = $@"You have ordered {Quantity} x {Product.ProductName}
-                                at a total cost of {Quantity * Product.Price:c}";
-                return RedirectToPage("/OrderSuccess");
+                Basket basket = new();
+                if (Request.Cookies[nameof(Basket)] is not null)
+                {
+                    basket = JsonSerializer.Deserialize<Basket>(Request.Cookies[nameof(Basket)]);
+                }
+
+                basket.Items.Add(
+                    new OrderItem()
+                    {
+                        ProductID = ID,
+                        Quantity = Quantity,
+                        UnitPrice = Price
+                    }
+                );
+
+                var json = JsonSerializer.Serialize(basket);
+                var cookiesOptions = new CookieOptions()
+                {
+                    Expires = DateTime.Now.AddDays(30),
+                };
+                Response.Cookies.Append(nameof(Basket), json, cookiesOptions);
+
+                return RedirectToPage("/Index");
+
+                //Confirmation = $@"You have ordered {Quantity} x {Product.ProductName}
+                //                at a total cost of {Quantity * Product.Price:c}";
+                //return RedirectToPage("/OrderSuccess");
             }
+
             return Page();
         }
     }
