@@ -10,6 +10,7 @@
 
         public void Configure(IApplicationBuilder app, IHostEnvironment env)
         {
+            // Add services to the container.
 
         }
 
