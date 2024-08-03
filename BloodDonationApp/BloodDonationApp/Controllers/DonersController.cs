@@ -1,5 +1,6 @@
 ﻿using BloodDonationApp.Contexts;
 using BloodDonationApp.Models;
+using BloodDonationApp.Utilitis;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,7 +21,7 @@ namespace BloodDonationApp.Controllers
 
         // Get all the Doners
         [HttpGet]
-        [Route("GetDoners")]
+        [Route(StringConstants.GetDoners)]
         public async Task<IEnumerable<Doners>> GetDoners()
         {
             return await _bdContext.Doners.ToListAsync();
@@ -28,7 +29,7 @@ namespace BloodDonationApp.Controllers
 
         // Get Doner by ID
         [HttpGet]
-        [Route("GetDoner")]
+        [Route(StringConstants.GetDoner)]
         public async Task<Doners?> GetDoner([FromQuery] int id)
         {
             Doners? doner = await _bdContext.Doners.FindAsync(id);
@@ -37,7 +38,7 @@ namespace BloodDonationApp.Controllers
 
         // Add new Doner
         [HttpPost]
-        [Route("CreateDoner")]
+        [Route(StringConstants.CreateDoner)]
         public async Task<string> CreateDoner([FromBody] Doners request)
         {
             await _bdContext.Doners.AddAsync(request);
@@ -48,7 +49,7 @@ namespace BloodDonationApp.Controllers
 
         // Delete Doner By ID
         [HttpDelete]
-        [Route("DeleteDoner")]
+        [Route(StringConstants.DeleteDoner)]
         public async Task<string> DeleteDoner([FromQuery] int id)
         {
             var donerToDelete = await _bdContext.Doners.FindAsync(id);
