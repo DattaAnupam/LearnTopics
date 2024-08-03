@@ -23,6 +23,7 @@
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "blooddonationapp",
+      "applicationUrl": "http://localhost:5252",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
