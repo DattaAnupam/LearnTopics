@@ -1,4 +1,7 @@
-﻿namespace BloodDonationApp
+﻿using BloodDonationApp.Contexts;
+using Microsoft.EntityFrameworkCore;
+
+namespace BloodDonationApp
 {
     public class Startup
     {
@@ -10,13 +13,16 @@
 
         public void Configure(IApplicationBuilder app, IHostEnvironment env)
         {
-            // Add services to the container.
-
+            
         }
 
         public void ConfigureServices(IServiceCollection services)
         {
-
+            // Add services to the container.
+            services.AddDbContext<BloodDonationDBContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString(""));
+            });
         }
     }
 }
