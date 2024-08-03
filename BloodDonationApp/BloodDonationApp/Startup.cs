@@ -13,7 +13,11 @@ namespace BloodDonationApp
 
         public void Configure(IApplicationBuilder app, IHostEnvironment env)
         {
-            
+            app.UseRouting();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
         }
 
         public void ConfigureServices(IServiceCollection services)
@@ -23,6 +27,8 @@ namespace BloodDonationApp
             {
                 options.UseSqlServer(Configuration.GetConnectionString("bloodDonationDbConnStr"));
             });
+
+            services.AddControllers();
         }
     }
 }
