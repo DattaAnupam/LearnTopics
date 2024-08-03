@@ -21,7 +21,7 @@ namespace BloodDonationApp
             // Add services to the container.
             services.AddDbContext<BloodDonationDBContext>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString(""));
+                options.UseSqlServer(Configuration.GetConnectionString("bloodDonationDbConnStr"));
             });
         }
     }
