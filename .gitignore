@@ -14,3 +14,4 @@ obj/
 *.bin
 
 DotNetSolutions/DependencyInjection/.vs/*
+/BloodDonationApp/.vs/BloodDonationApp/v17
