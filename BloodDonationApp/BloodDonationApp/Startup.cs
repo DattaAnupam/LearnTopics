@@ -1,4 +1,5 @@
 ﻿using BloodDonationApp.Contexts;
+using BloodDonationApp.Utilitis;
 using Microsoft.EntityFrameworkCore;
 
 namespace BloodDonationApp
@@ -25,7 +26,7 @@ namespace BloodDonationApp
             // Add services to the container.
             services.AddDbContext<BloodDonationDBContext>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("bloodDonationDbConnStr"));
+                options.UseSqlServer(Configuration.GetConnectionString(StringConstants.BloodDonationDBConnString));
             });
 
             services.AddControllers();
