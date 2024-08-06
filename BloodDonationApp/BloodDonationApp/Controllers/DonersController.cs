@@ -53,6 +53,10 @@ namespace BloodDonationApp.Controllers
         public async Task<string> DeleteDoner([FromQuery] int id)
         {
             var donerToDelete = await _bdContext.Doners.FindAsync(id);
+            if(donerToDelete == null)
+            {
+                return "Doner not found";
+            }
             _bdContext.Doners.Remove(donerToDelete);
             await _bdContext.SaveChangesAsync();
 
