@@ -22,3 +22,10 @@ example: <code>public delegate void MyDelegate(string msg);</code>
 > It does not allow <code>ref</code> and <code>out</code> parameters.
 
 > It must return a value.
+
+
+### Action
+
+<code>Action</code> is another in-built delegate, inside <code>System</code> namespace.
+
+> It does not return value.
