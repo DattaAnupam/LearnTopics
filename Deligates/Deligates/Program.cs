@@ -3,6 +3,7 @@
     // Diclare delegate
     public delegate void MyDelegate(string msg);
     public delegate int MyDelegate2(int num1, int num2);
+    public delegate void MyDelegate3<T>(T obj);
     public class Program
     {
         public static void Main(string[] args)
@@ -28,6 +29,13 @@
             delD("Multi cast delegate: Adding two delegate");
             delD -=delC;
             delD("Multi cast delegat: Substituting delegate");
+            #endregion
+
+            #region Generic Delegate
+            MyDelegate3<int> delE = ClassA.MethodD;
+            delE(5);
+            MyDelegate3<string> delF = ClassA.MethodD;
+            delF("test");
             #endregion
         }
     }
