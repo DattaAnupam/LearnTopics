@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deligates", "Deligates\Deligates.csproj", "{C3A387E8-88E9-4FB6-91BE-8B60673C23D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deligates", "Deligates\Deligates.csproj", "{C3A387E8-88E9-4FB6-91BE-8B60673C23D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncDelegates", "FuncDelegates\FuncDelegates.csproj", "{5D36ABDE-1C3E-4E6C-8D44-A82D6C501ED6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C3A387E8-88E9-4FB6-91BE-8B60673C23D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3A387E8-88E9-4FB6-91BE-8B60673C23D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3A387E8-88E9-4FB6-91BE-8B60673C23D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D36ABDE-1C3E-4E6C-8D44-A82D6C501ED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D36ABDE-1C3E-4E6C-8D44-A82D6C501ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D36ABDE-1C3E-4E6C-8D44-A82D6C501ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D36ABDE-1C3E-4E6C-8D44-A82D6C501ED6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
