@@ -12,3 +12,9 @@ example: <code>public delegate void MyDelegate(string msg);</code>
 
 > To remove methods <code>-</code> is used.
 
+
+### Func
+
+<code>Func</code> is in-built delegate, inside <code>System</code> namespace.
+
+> It can take from 0 to 16 inputs, but the end parameter should be <code>out</code> parameter.
