@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿static void Greet(string name) => Console.WriteLine($"Hello {name}!!!");
+
+#region Simple Func delegate
+Action<string> greetAction = Greet;
+
+greetAction("Anupam");
+#endregion
+
