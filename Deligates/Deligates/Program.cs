@@ -23,7 +23,11 @@
             ClassA.MethodB(delA);
 
             #region Multi cast Delegate
-            
+            MyDelegate delC = ClassA.MethodA;
+            MyDelegate delD = delA + delC;
+            delD("Multi cast delegate: Adding two delegate");
+            delD -=delC;
+            delD("Multi cast delegat: Substituting delegate");
             #endregion
         }
     }
