@@ -18,3 +18,7 @@ example: <code>public delegate void MyDelegate(string msg);</code>
 <code>Func</code> is in-built delegate, inside <code>System</code> namespace.
 
 > It can take from 0 to 16 inputs, but the end parameter should be <code>out</code> parameter.
+
+> It does not allow <code>ref</code> and <code>out</code> parameters.
+
+> It must return a value.
