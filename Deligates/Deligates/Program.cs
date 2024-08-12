@@ -13,6 +13,9 @@
             // Assigning lamda function to the delegate
             delA = (string msg) => { Console.WriteLine(msg); };
             delA("This delegate holds reference to the lamda function");
+
+            // Pass deligate as argument
+            ClassA.MethodB(delA);
         }
     }
 }
