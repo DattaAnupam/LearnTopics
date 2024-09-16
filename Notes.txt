@@ -1,9 +1,16 @@
 Notes:
 ========
-- Order of writing query 
+- Order how we use SQL clauses-
     SELECT
     FROM
     WHERE
     GROUP BY
     HAVING
+    ORDER BY
+- Order how SQL evaluates SQL clauses - 
+    FROM
+    WHERE
+    GROUP BY
+    HAVING
+    SELECT
     ORDER BY
