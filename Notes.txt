@@ -1,0 +1,9 @@
+Notes:
+========
+- Order of writing query 
+    SELECT
+    FROM
+    WHERE
+    GROUP BY
+    HAVING
+    ORDER BY
