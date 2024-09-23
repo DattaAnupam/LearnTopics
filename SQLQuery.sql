@@ -40,3 +40,9 @@ GO
 ALTER TABLE EMPLOYEES
 	ADD FOREIGN KEY (DesignationID) REFERENCES DESIGNATIONS(Id);
 GO
+
+-- Update value inside a table
+Update TABLE EMPLOYEES
+SET Degsignation = 'Full Stack'
+WHERE EmpName = 'Anupam'
+GO
