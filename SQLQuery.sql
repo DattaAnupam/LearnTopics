@@ -46,3 +46,14 @@ Update TABLE EMPLOYEES
 SET Degsignation = 'Full Stack'
 WHERE EmpName = 'Anupam'
 GO
+
+-- Use of IN query
+-- Select AddressLine1, AddressLine2, City
+-- Where AddressLine2 is not null
+-- where city is either from Long Beach, Spokane, Haney or Toronto
+SELECT AddressLine1, AddressLine2, City 
+FROM Person.Address
+WHERE 
+	 AddressLine2 IS NOT NULL AND
+	City IN ('Long Beach', 'Spokane', 'Haney', 'Toronto')
+GO
