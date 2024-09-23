@@ -64,3 +64,13 @@ SELECT Name, SafetyStockLevel
 FROM Production.Product
 WHERE SafetyStockLevel BETWEEN 100 AND 1500
 
+-- Use of Case
+-- Comment StandardCost based on value 12
+SELECT StandardCost,
+CASE
+	WHEN StandardCost > 12 then 'more than 12'
+	WHEN StandardCost < 12 then 'less than 12'
+	ELSE 'equal to 12'
+END AS [Comment]
+FROM Production.ProductCostHistory
+
