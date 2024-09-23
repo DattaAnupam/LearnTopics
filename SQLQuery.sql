@@ -54,6 +54,13 @@ GO
 SELECT AddressLine1, AddressLine2, City 
 FROM Person.Address
 WHERE 
-	 AddressLine2 IS NOT NULL AND
+	AddressLine2 IS NOT NULL AND
 	City IN ('Long Beach', 'Spokane', 'Haney', 'Toronto')
 GO
+
+-- Use of Between
+-- Select name and SafetyStockLevel between 100 to 1500
+SELECT Name, SafetyStockLevel
+FROM Production.Product
+WHERE SafetyStockLevel BETWEEN 100 AND 1500
+
