@@ -1,18 +1,1 @@
-### DotnetCore ###
-# .NET Core build folders
-bin/
-obj/
-
-# Visual Studio folders
-.vs/*
-*.vsidx
-
-*.suo
-*.dtbcache.v2
-*.wsuo
-*.futdcache.v2
-*.bin
-
-DotNetSolutions/DependencyInjection/.vs/*
-/BloodDonationApp/.vs/BloodDonationApp/v17
-/BloodDonationApp/.vs/BloodDonationApp/config
+node_modules
