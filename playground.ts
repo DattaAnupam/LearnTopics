@@ -8,6 +8,6 @@ let fortuner: Car = {
 }
 
 // object destructureing
-let { make, price } = fortuner
+let { make:maker, price } = fortuner
 
-console.log(`Make: ${make} Cost: ${price}`)
+console.log(`Make: ${maker} Cost: ${price}`)

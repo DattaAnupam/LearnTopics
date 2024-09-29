@@ -1,0 +1,1 @@
+- While doing object destructuring on the left side of "=" put exact same name as the property name inside the object, if not using Alias for the variable.

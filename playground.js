@@ -7,5 +7,5 @@ let fortuner = {
     isAvailable: true
 };
 // object destructureing
-let { make, price } = fortuner;
-console.log(`Make: ${make} Cost: ${price}`);
+let { make: maker, price } = fortuner;
+console.log(`Make: ${maker} Cost: ${price}`);
