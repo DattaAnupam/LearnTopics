@@ -1,13 +1,9 @@
-import { Car } from './Car';
+let numbers: number[] = [15, 25, 35, 45, 55]
 
-let fortuner: Car = {
-    make: 'Toyota',
-    color: 'black',
-    price: 3400000,
-    isAvailable: true
+for(let num of numbers){
+    console.log(num);
 }
 
-// object destructureing
-let { make:maker, price } = fortuner
-
-console.log(`Make: ${maker} Cost: ${price}`)
+for(let num in numbers){
+    console.log(num);
+}

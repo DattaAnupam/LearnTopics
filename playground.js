@@ -1,11 +1,8 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-let fortuner = {
-    make: 'Toyota',
-    color: 'black',
-    price: 3400000,
-    isAvailable: true
-};
-// object destructureing
-let { make: maker, price } = fortuner;
-console.log(`Make: ${maker} Cost: ${price}`);
+let numbers = [15, 25, 35, 45, 55];
+for (let num of numbers) {
+    console.log(num);
+}
+for (let num in numbers) {
+    console.log(num);
+}
