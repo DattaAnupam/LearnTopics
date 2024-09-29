@@ -1,0 +1,22 @@
+{
+  "name": "learn-angular",
+  "version": "1.0.0",
+  "description": "learn basics of angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DattaAnupam/LearnTopics.git#angular"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "Anupam Datta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DattaAnupam/LearnTopics/issues"
+  },
+  "homepage": "https://github.com/DattaAnupam/LearnTopics/tree/angular#readme"
+}
