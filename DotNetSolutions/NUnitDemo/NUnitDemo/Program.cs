@@ -1,5 +1,7 @@
 ﻿using NUnitDemo;
+using NUnitDemo.Interfaces;
 
-Calculater calculater = new Calculater();
-var total = calculater.Sum(1, 2);
-Console.WriteLine(total.ToString());
+IUtilities utilities = new Utilities();
+
+ICalculator calculater = new Calculator(utilities);
+var total = calculater.GetSum(1, 2);
