@@ -14,3 +14,5 @@ obj/
 *.bin
 
 DotNetSolutions/DependencyInjection/.vs/*
+/DotNetSolutions/NUnitDemo/.vs/NUnitDemo/v17/TestStore/0/001.testlog
+/DotNetSolutions/NUnitDemo/.vs/NUnitDemo/v17/TestStore/0/testlog.manifest
