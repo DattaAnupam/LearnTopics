@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\aanup\\OneDrive\\Desktop\\Learning\\LearnTopics\\DotNetSolutions\\NUnitDemo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{16DA389A-2D6E-4EB8-846D-CD417F61E981}|TestProject1\\TestProject1.csproj|c:\\users\\aanup\\onedrive\\desktop\\learning\\learntopics\\dotnetsolutions\\nunitdemo\\testproject1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16DA389A-2D6E-4EB8-846D-CD417F61E981}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{848BE574-1971-4733-93AE-AEAC0AAE9E71}|XUnitTestProject\\XUnitTestProject.csproj|c:\\users\\aanup\\onedrive\\desktop\\learning\\learntopics\\dotnetsolutions\\nunitdemo\\xunittestproject\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{848BE574-1971-4733-93AE-AEAC0AAE9E71}|XUnitTestProject\\XUnitTestProject.csproj|solutionrelative:xunittestproject\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA1D8ED3-E9BF-4E28-8501-9F91CBD142B3}|NUnitDemo\\NUnitDemo.csproj|c:\\users\\aanup\\onedrive\\desktop\\learning\\learntopics\\dotnetsolutions\\nunitdemo\\nunitdemo\\calculater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA1D8ED3-E9BF-4E28-8501-9F91CBD142B3}|NUnitDemo\\NUnitDemo.csproj|solutionrelative:nunitdemo\\calculater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA1D8ED3-E9BF-4E28-8501-9F91CBD142B3}|NUnitDemo\\NUnitDemo.csproj|c:\\users\\aanup\\onedrive\\desktop\\learning\\learntopics\\dotnetsolutions\\nunitdemo\\nunitdemo\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA1D8ED3-E9BF-4E28-8501-9F91CBD142B3}|NUnitDemo\\NUnitDemo.csproj|solutionrelative:nunitdemo\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA1D8ED3-E9BF-4E28-8501-9F91CBD142B3}|NUnitDemo\\NUnitDemo.csproj|c:\\users\\aanup\\onedrive\\desktop\\learning\\learntopics\\dotnetsolutions\\nunitdemo\\nunitdemo\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA1D8ED3-E9BF-4E28-8501-9F91CBD142B3}|NUnitDemo\\NUnitDemo.csproj|solutionrelative:nunitdemo\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA1D8ED3-E9BF-4E28-8501-9F91CBD142B3}|NUnitDemo\\NUnitDemo.csproj|c:\\users\\aanup\\onedrive\\desktop\\learning\\learntopics\\dotnetsolutions\\nunitdemo\\nunitdemo\\interfaces\\iutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA1D8ED3-E9BF-4E28-8501-9F91CBD142B3}|NUnitDemo\\NUnitDemo.csproj|solutionrelative:nunitdemo\\interfaces\\iutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AA1D8ED3-E9BF-4E28-8501-9F91CBD142B3}|NUnitDemo\\NUnitDemo.csproj|c:\\users\\aanup\\onedrive\\desktop\\learning\\learntopics\\dotnetsolutions\\nunitdemo\\nunitdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -28,39 +36,65 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\aanup\\OneDrive\\Desktop\\Learning\\LearnTopics\\DotNetSolutions\\NUnitDemo\\TestProject1\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "TestProject1\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\aanup\\OneDrive\\Desktop\\Learning\\LearnTopics\\DotNetSolutions\\NUnitDemo\\TestProject1\\UnitTest1.cs",
-              "RelativeToolTip": "TestProject1\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAvAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\aanup\\OneDrive\\Desktop\\Learning\\LearnTopics\\DotNetSolutions\\NUnitDemo\\XUnitTestProject\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "XUnitTestProject\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\aanup\\OneDrive\\Desktop\\Learning\\LearnTopics\\DotNetSolutions\\NUnitDemo\\XUnitTestProject\\UnitTest1.cs",
+              "RelativeToolTip": "XUnitTestProject\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T17:28:54.079Z",
+              "WhenOpened": "2024-10-06T06:29:01.978Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Calculater.cs",
-              "DocumentMoniker": "C:\\Users\\aanup\\OneDrive\\Desktop\\Learning\\LearnTopics\\DotNetSolutions\\NUnitDemo\\NUnitDemo\\Calculater.cs",
-              "RelativeDocumentMoniker": "NUnitDemo\\Calculater.cs",
-              "ToolTip": "C:\\Users\\aanup\\OneDrive\\Desktop\\Learning\\LearnTopics\\DotNetSolutions\\NUnitDemo\\NUnitDemo\\Calculater.cs",
-              "RelativeToolTip": "NUnitDemo\\Calculater.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IUtilities.cs",
+              "DocumentMoniker": "C:\\Users\\aanup\\OneDrive\\Desktop\\Learning\\LearnTopics\\DotNetSolutions\\NUnitDemo\\NUnitDemo\\Interfaces\\IUtilities.cs",
+              "RelativeDocumentMoniker": "NUnitDemo\\Interfaces\\IUtilities.cs",
+              "ToolTip": "C:\\Users\\aanup\\OneDrive\\Desktop\\Learning\\LearnTopics\\DotNetSolutions\\NUnitDemo\\NUnitDemo\\Interfaces\\IUtilities.cs",
+              "RelativeToolTip": "NUnitDemo\\Interfaces\\IUtilities.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T17:23:47.537Z",
+              "WhenOpened": "2024-10-06T05:58:11.456Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Utilities.cs",
+              "DocumentMoniker": "C:\\Users\\aanup\\OneDrive\\Desktop\\Learning\\LearnTopics\\DotNetSolutions\\NUnitDemo\\NUnitDemo\\Utilities.cs",
+              "RelativeDocumentMoniker": "NUnitDemo\\Utilities.cs",
+              "ToolTip": "C:\\Users\\aanup\\OneDrive\\Desktop\\Learning\\LearnTopics\\DotNetSolutions\\NUnitDemo\\NUnitDemo\\Utilities.cs",
+              "RelativeToolTip": "NUnitDemo\\Utilities.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T05:57:35.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Calculator.cs",
+              "DocumentMoniker": "C:\\Users\\aanup\\OneDrive\\Desktop\\Learning\\LearnTopics\\DotNetSolutions\\NUnitDemo\\NUnitDemo\\Calculator.cs",
+              "RelativeDocumentMoniker": "NUnitDemo\\Calculator.cs",
+              "ToolTip": "C:\\Users\\aanup\\OneDrive\\Desktop\\Learning\\LearnTopics\\DotNetSolutions\\NUnitDemo\\NUnitDemo\\Calculator.cs",
+              "RelativeToolTip": "NUnitDemo\\Calculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T05:51:33.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\aanup\\OneDrive\\Desktop\\Learning\\LearnTopics\\DotNetSolutions\\NUnitDemo\\NUnitDemo\\Program.cs",
               "RelativeDocumentMoniker": "NUnitDemo\\Program.cs",
               "ToolTip": "C:\\Users\\aanup\\OneDrive\\Desktop\\Learning\\LearnTopics\\DotNetSolutions\\NUnitDemo\\NUnitDemo\\Program.cs",
               "RelativeToolTip": "NUnitDemo\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T17:23:16.622Z",
+              "WhenOpened": "2024-10-03T20:10:08.461Z",
               "EditorCaption": ""
             }
           ]
